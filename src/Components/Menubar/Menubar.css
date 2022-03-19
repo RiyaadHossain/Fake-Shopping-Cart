@@ -1,0 +1,11 @@
+.logo{
+    padding: 14px;
+    font-weight: bold;
+    font-size: 22px;
+}
+.menu{
+    list-style: none;
+    display: inline-block;
+    padding: 14px;
+    font-size: 19px;
+}
