@@ -5,7 +5,7 @@ import ReactModal from "../ReactModal/ReactModal";
 const SingleProduct = ({ product, setCartCount }) => {
   return (
     <div className=" col-md-6 col-lg-4">
-      <div className="card p-4 shadow border-3">
+      <div  data-aos="flip-up" className="card p-4 shadow border-3">
         <div className="card-title">
           <h3>{product.title}</h3>
         </div>
