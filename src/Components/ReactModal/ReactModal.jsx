@@ -23,7 +23,7 @@ const ReactModal = ({info}) => {
         </Modal.Header>
               <Modal.Body>{info.description }
                   <div className="d-flex align-items-center justify-content-around">
-                  <h4 className="mt-3"><strong>Price:</strong> {info.price}</h4>
+                  <h4 className="mt-3"><strong>Price:</strong> {info.price}$</h4>
                   <h4 className="mt-3"><strong>Ratting:</strong> { info.rating.rate }</h4>
                   </div>
                   </Modal.Body>
