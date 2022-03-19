@@ -3,8 +3,8 @@ import Menubar from './Components/Menubar/Menubar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AllProducts from './Components/AllProducts/AllProducts';
 import { useEffect, useState } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from 'aos'; // Animation
+import 'aos/dist/aos.css'; // Animation
 
 function App() {
   const [cart, setCart] = useState(0)
@@ -14,7 +14,7 @@ function App() {
   }
 
   useEffect(() => {
-    AOS.init()
+    AOS.init() // Animation
   } ,[])
   return (
     <div className="App">
