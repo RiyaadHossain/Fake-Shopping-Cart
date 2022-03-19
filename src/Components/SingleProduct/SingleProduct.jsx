@@ -16,7 +16,7 @@ const SingleProduct = ({ product }) => {
         <div className="d-flex justify-align-content-center">
           <button className="btn btn-success fw-bold">Cart ➕</button>
           <button className="btn btn-danger ms-2 fw-bold">Delete ❌</button>
-          <ReactModal></ReactModal>
+          <ReactModal info={product}></ReactModal>
         </div>
       </div>
     </div>
