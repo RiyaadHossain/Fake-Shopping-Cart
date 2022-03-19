@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import './Menubar.css'
 
-const Menubar = () => {
-  const [cart, setCart] = useState(0)
+const Menubar = ({cart}) => {
   return (
     <div className="row">
       <div className="col-md-4 logo">Logo</div>
