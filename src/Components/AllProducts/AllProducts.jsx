@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import SingleProduct from "../../SingleProduct/SingleProduct";
+import SingleProduct from "../SingleProduct/SingleProduct";
 
 const AllProducts = () => {
   const [products, setProducts] = useState([]);
@@ -11,7 +11,7 @@ const AllProducts = () => {
   return (
       <div className="row g-4 mt-5 container mx-auto">
         {products.map((item) => (
-          <SingleProduct product={item}></SingleProduct>
+          <SingleProduct key={item.id} product={item}></SingleProduct>
         ))}
       </div>
   );
