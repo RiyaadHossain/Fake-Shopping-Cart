@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 
-const ReactModal = ({info}) => {
+const ReactModal = ({ info }) => {
+  const {image, title, price, ratting, description} = info
   const [show, setShow] = useState(false);
-    console.log(info)
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
@@ -18,13 +18,13 @@ const ReactModal = ({info}) => {
 
       <Modal show={show} onHide={handleClose}>
               <Modal.Header>
-                  <img className="w-50 me-3" src={ info.image} alt="" />
-                  <Modal.Title>{ info.title}</Modal.Title>
+                  <img className="w-50 me-3" src={ image} alt="" />
+                  <Modal.Title>{ title}</Modal.Title>
         </Modal.Header>
-              <Modal.Body>{info.description }
+              <Modal.Body>{description }
                   <div className="d-flex align-items-center justify-content-around">
-                  <h4 className="mt-3"><strong>Price:</strong> {info.price}$</h4>
-                  <h4 className="mt-3"><strong>Ratting:</strong> { info.rating.rate }</h4>
+                  <h4 className="mt-3"><strong>Price:</strong> {price}$</h4>
+                  <h4 className="mt-3"><strong>Ratting:</strong> { ratting.rate }</h4>
                   </div>
                   </Modal.Body>
               <Modal.Footer>
